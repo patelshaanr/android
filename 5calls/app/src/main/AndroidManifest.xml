@@ -34,7 +34,7 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".controller.MainActivity" />
-            </activity>
+        </activity>
         <activity android:name=".controller.RepCallActivity"
             android:parentActivityName=".controller.IssueActivity">
             <meta-data

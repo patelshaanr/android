@@ -1,7 +1,7 @@
 <resources xmlns:xliff="http://schemas.android.com/tools">
 
     <!-- The application name [CHAR_LIMIT=25] -->
-    <string name="app_name">5 Calls</string>
+    <string name="app_name">Action for Animals</string>
 
     <!-- The prompt on the location page to have a user set their location [CHAR_LIMIT=NONE] -->
     <string name="location_prompt">Set your location to find your local representatives.</string>
@@ -46,22 +46,22 @@
     <string name="no_contact_areas_message">There are no calls for this issue.</string>
 
     <!-- Menu option to go to the About 5 Calls screen [CHAR_LIMIT=25] -->
-    <string name="menu_about">About 5 Calls</string>
+    <string name="menu_about">About Action for Animals</string>
 
     <!-- Title of the About 5 Calls screen [CHAR_LIMIT=30] -->
-    <string name="about_title">About 5 Calls</string>
+    <string name="about_title">About Action for Animals</string>
 
     <!-- Header on the About 5 Calls screen [CHAR_LIMIT=30] -->
     <string name="about_header">MAKE YOUR VOICE HEARD</string>
 
     <!-- First paragraph of About screen text [CHAR_LIMIT=NONE] -->
-    <string name="about_p1">Turn your passive participation into active resistance. 5 Calls is the easiest and most effective way for U.S. constituents to make a political impact.</string>
+    <string name="about_p1">Turn your concern for animals into political power. Action for animals makes it easy and effective for U.S. constrituents to take action for animals and push for change.</string>
 
     <!-- Call to action, 'Spend 5 minutes, make 5 calls' [CHAR_LIMIT=] -->
-    <string name="about_p2">Spend 5 minutes, make 5 calls.</string>
+    <string name="about_p2">A minute for you. A life for them</string>
 
     <!-- Body of text on the About 5 Calls screen, describing the app. \n\n is used to start the next paragraph. [CHAR_LIMIT=NONE] -->
-    <string name="about_p3">5 Calls connects you directly with your representatives via phone numbers sourced from public government websites, we do not represent any specific government entity, regardless of political party.</string>
+    <string name="about_p3">Action for Animals connects you directly with your representatives using publicly available contact information. We are not affiliated with any government entity or political party.</string>
 
     <!-- Button linking to a page about Why calling works [CHAR_LIMIT=30] -->
     <string name="why_calling_btn">why calling works</string>
@@ -70,7 +70,7 @@
     <string name="about_app_prompt">About this app</string>
 
     <!-- Prompt to click on the "Rate" button [CHAR_LIMIT=100] -->
-    <string name="rate_us_prompt">If the 5 Calls app has been useful to you, we would appreciate it if you rate us in the Play Store.</string>
+    <string name="rate_us_prompt">If the Action for Animals app has been useful to you, we would appreciate it if you rate us in the Play Store.</string>
 
     <!-- Button linking to the 5calls.org about page [CHAR_LIMIT=30] -->
     <string name="about_us_btn">about us</string>
@@ -103,7 +103,7 @@
     <string name="mastodon_btn" translatable="false">Mastodon</string>
 
     <!-- Button linking to the 5calls.org Play Store page to request a rating [CHAR_LIMIT=30] -->
-    <string name="rate_us_btn">Rate 5 Calls</string>
+    <string name="rate_us_btn">Rate Action for Animals</string>
 
     <!-- Button linking to the privacy policy [CHAR_LIMIT=30] -->
     <string name="privacy_btn">Privacy Policy</string>
@@ -112,16 +112,16 @@
     <string name="calls_to_date">Together we\'ve made <xliff:g id="callCount">%1$s</xliff:g> calls</string>
 
     <!-- Text shown to the user on the splash / tutorial screen describing the 5 Calls app. \n\n is used to create new paragraphs. [CHAR_LIMIT=NONE] -->
-    <string name="about_splash">There\'s one simple and straightforward way to influence the Government that is supposed to represent you: Call them on the phone.</string>
+    <string name="about_splash">There\'s one simple, powerful way to influence the government on behalf of animals: Call them.</string>
 
     <!-- Tutorial screen text that calling is effective [CHAR_LIMIT=100] -->
-    <string name="about_p2_2">Calling is the most effective way to influence your representatives.</string>
+    <string name="about_p2_2">Calling is one of the most effective ways to influence your representatives on behalf of animals.</string>
 
     <!-- Text shown to the user on the splash / tutorial screen describing more about the 5 Calls app. \n\n is used to create new paragraphs. [CHAR_LIMIT=NONE] -->
-    <string name="about_splash_2">5 Calls provides phone numbers and scripts so calling is quick and easy, finds your local representatives so your calls have more impact.</string>
+    <string name="about_splash_2">Action for Animals provides phone numbers and scripts so calling is quick and easy, find your local representatives so your calls have more impact.</string>
 
     <!-- Text shown to the user on the splash / tutorial screen letting them know about notifications and reminders [CHAR_LIMIT=NONE] -->
-    <string name="about_splash_3">The 5 Calls app can help you maintain involvement by reminding you several times a week to make calls.</string>
+    <string name="about_splash_3">The Action for Animals app can help you maintain involvement by reminding you several times a week to make calls.</string>
 
     <!-- Button shown to turn on reminders [CHAR_LIMIT=50] -->
     <string name="tutorial_reminders_btn">Turn on reminders</string>
@@ -139,8 +139,8 @@
     <string name="get_started_btn">Get started</string>
 
     <!-- Description of how the 5 Calls app is open-source, link to github page [CHAR_LIMIT=NONE] -->
-    <string name="open_source_info">The 5 Calls app is open-source and volunteer made. Find it at
-        <a href="https://github.com/5calls/android\">github</a>.</string>
+    <string name="open_source_info">The Action for Animals app is open-source and volunteer made. Find it at
+        <a href="https://github.com/patelshaanr/android\">github</a>.</string>
 
     <!-- Version code shown to the user in the about page [CHAR_LIMIT=NONE] -->
     <string name="version_info">Version <xliff:g id="versionName">%1$s</xliff:g> (<xliff:g id="versionCode">%2$d</xliff:g>)</string>
@@ -167,16 +167,16 @@
     <string name="settings">Settings</string>
 
     <!-- Setting to send usage data (i.e. Analytics) to the 5 calls team [CHAR_LIMIT=50] -->
-    <string name="setting_usage_title">Send app usage data to 5 Calls</string>
+    <string name="setting_usage_title">Send app usage data to Action for Animals</string>
 
     <!-- Description of setting to send usage data to the 5 calls team [CHAR_LIMIT=NONE] -->
-    <string name="settings_usage_summary">Data is anonymous and helps us understand how the 5 Calls app is used and make improvements.</string>
+    <string name="settings_usage_summary">Data is anonymous and helps us understand how the Action for Animals app is used and make improvements.</string>
 
     <!-- Menu option to update the location for the app [CHAR_LIMIT=25] -->
     <string name="menu_location">Update location</string>
 
     <!-- Title for issues list page, starts with the app name and specifies the user's location [CHAR_LIMIT=30] -->
-    <string name="title_main">5 Calls for <xliff:g id="location">%1$s</xliff:g></string>
+    <string name="title_main">Action for Animals for <xliff:g id="location">%1$s</xliff:g></string>
 
     <!-- Button that will use the user's device location to set the location in the app [CHAR_LIMIT=30] -->
     <string name="btn_gps">Use my location</string>
@@ -192,7 +192,7 @@
     <string name="stats_activity">Your Impact</string>
 
     <!-- Message that the user has no stats yet because they haven't made calls yet, shown on the impact page [CHAR_LIMIT=100] -->
-    <string name="no_calls_impact_message">You haven\'t made any calls yet with the 5 Calls app!</string>
+    <string name="no_calls_impact_message">You haven\'t made any calls yet with the Action for Animals app!</string>
 
     <!-- Short sentence with the user's total call count [CHAR_LIMIT=50] -->
     <string name="your_call_count">Your impact is <xliff:g id="callCount">%1$d</xliff:g> calls!</string>
@@ -331,10 +331,10 @@
     <string name="no_days_selected">No days selected</string>
 
     <!-- Title for a notification reminder to make 5 calls [CHAR_LIMIT=30 -->
-    <string name="notification_title">Make your voice heard</string>
+    <string name="notification_title">Speak out for those who cannot</string>
 
     <!-- Text for a notification reminder to make 5 calls [CHAR_LIMIT=50] -->
-    <string name="notification_text">Spend 5 minutes to contact your representatives.</string>
+    <string name="notification_text">Take a minute to contact your representatives.</string>
 
     <!-- Button to go to the settings activity [CHAR_LIMIT=25] -->
     <string name="go_to_settings">Go to settings</string>
@@ -366,16 +366,16 @@
     <string name="share_chooser_title">Share to…</string>
 
     <!-- Subject for an email sent from the "Your Impact" screen sharing how many calls you've made [CHAR_LIMIT=200] -->
-    <string name="share_subject">I\'ve used 5 Calls to make an impact</string>
+    <string name="share_subject">I\'ve used Action for Animals to make an impact</string>
 
     <!-- Content of an email or message shared from the "Your Impact" screen sharing how many calls you've made [CHAR_LIMIT=NONE] -->
-    <string name="share_content">I\'ve made <xliff:g id="call_count">%1$d</xliff:g> calls to my reps - join me at 5calls.org</string>
+    <string name="share_content">I\'ve made <xliff:g id="call_count">%1$d</xliff:g> calls to my reps - join me at https://actionforanimals.substack.com/</string>
 
     <!-- Subject for an email sent from an issue detail screen sharing an issue [CHAR_LIMIT=200] -->
-    <string name="issue_share_subject">I want you to know about this issue I found on 5 Calls</string>
+    <string name="issue_share_subject">I want you to know about this issue I found on Action for Animals</string>
 
     <!-- Content of an email or message shared from an issue detail screen sharing an issue [CHAR_LIMIT=NONE] -->
-    <string name="issue_share_content">I just called my reps to <xliff:g id="issue_summary">%1$s</xliff:g> — you should too: http://5calls.org/issue/<xliff:g id="issue_id">%2$s</xliff:g></string>
+    <string name="issue_share_content">I just called my reps to <xliff:g id="issue_summary">%1$s</xliff:g> — you should too: https://actionforanimals.substack.com/p/<xliff:g id="issue_id">%2$s</xliff:g></string>
 
     <!-- Stats activity line chart title [CHAR_LIMIT=100] -->
     <string name="line_chart_title">Impact over time</string>
@@ -417,34 +417,34 @@
     <string name="update">update</string>
 
     <!-- URL for the 5 Calls Facebook page -->
-    <string name="facebook_url" translatable="false">https://www.facebook.com/make5calls/</string>
+    <string name="facebook_url" translatable="false"> https://www.facebook.com/groups/1554649705329105</string>
 
     <!-- URL for the 5 Calls Instagram account -->
-    <string name="instagram_url" translatable="false">https://www.instagram.com/5calls/</string>
+    <string name="instagram_url" translatable="false">https://www.instagram.com/xfaorg/</string>
 
     <!-- URL for the 5 Calls Bluesky account -->
-    <string name="bluesky_url" translatable="false">https://bsky.app/profile/5calls.org</string>
+    <string name="bluesky_url" translatable="false">https://bsky.app/profile/xfaorg.bsky.social</string>
 
     <!-- URL for the 5 Calls Mastodon account -->
-    <string name="mastodon_url" translatable="false">https://mastodon.social/@5calls</string>
+    <string name="mastodon_url" translatable="false">https://mastodon.social/@xfaorg</string>
 
     <!-- URL for the 5 Calls Threads account -->
-    <string name="threads_url" translatable="false">https://www.threads.net/@5calls</string>
+    <string name="threads_url" translatable="false">https://www.threads.com/@xfaorg</string>
 
     <!-- URL for the 5 Calls About page [CHAR_LIMIT=NONE] -->
-    <string name="about_url" translatable="false">https://5calls.org/about-us/</string>
+    <string name="about_url" translatable="false">https://actionforanimals.substack.com/p/about-us</string>
 
     <!-- URL for the 5 Calls FAQ page [CHAR_LIMIT=NONE] -->
-    <string name="faq_url" translatable="false">https://5calls.org/getting-started/</string>
+    <string name="faq_url" translatable="false">https://actionforanimals.substack.com/p/getting-started</string>
 
     <!-- URL for the 5 Calls Why Calling Works page [CHAR_LIMIT=NONE] -->
-    <string name="why_calling_url" translatable="false">https://5calls.org/why-calling-works/</string>
+    <string name="why_calling_url" translatable="false">https://actionforanimals.substack.com/p/why-calling-works</string>
 
     <!-- Email address to contact 5 Calls [CHAR_LIMIT=NONE] -->
-    <string name="email_address" translatable="false">hello@5calls.org</string>
+    <string name="email_address" translatable="false">howdyxfa@gmail.com</string>
 
     <!-- Default subject for an email sent from the about page [CHAR_LIMIT=NONE] -->
-    <string name="email_subject" translatable="false">Feedback from 5 Calls Android App</string>
+    <string name="email_subject" translatable="false">Feedback from Action for Animals Android App</string>
 
     <!-- Name of the intent chooser for sending emails [CHAR_LIMIT=NONE] -->
     <string name="send_email">Send Email</string>
@@ -557,7 +557,7 @@
     <string name="newsletter_signup_title">Get updates on the latest issues</string>
 
     <!-- Description of the newsletter. -->
-    <string name="newsletter_signup_description">Sign up for our newsletter, just one email a week</string>
+    <string name="newsletter_signup_description">Sign up for our newsletter, just one email a quarter</string>
 
     <!-- Placeholder text in newsletter signup form box for a user to enter their email. -->
     <string name="newsletter_signup_hint">Enter your email</string>
@@ -572,7 +572,7 @@
     <string name="error_email_format">Invalid email</string>
 
     <!-- Section title shown after the user has successfully signed up for the newsletter. -->
-    <string name="newsletter_success_title">Subscribed to 5 Calls Newsletter</string>
+    <string name="newsletter_success_title">Subscribed to Action for Animals Newsletter</string>
 
     <!-- Section description shown after the user has successfully signed up for the newsletter. -->
     <string name="newsletter_success_description">You\'ve successfully subscribed. The next issue will be delivered to your inbox.</string>
@@ -599,16 +599,16 @@
     <string name="done_issue_stats">Total calls on this topic:</string>
 
     <!-- In the issue done section, a description of why calls help for further user motivation. -->
-    <string name="done_description2">Your calls help your representatives decide what issues are most important to their constituents and can help direct their positions on policy that makes a difference in the lives of all Americans.</string>
+    <string name="done_description2">Your calls help representatives understand which animal protection issues matter most to their constituents and guide their decisions on policies that make a real different for animals.</string>
 
     <!-- In the issue done section, a prompt to share the call. -->
     <string name="done_share_prompt">Share this issue</string>
 
     <!-- Paragraph text describing that 5 Calls is a grassroots org, to explain why we may want donations. -->
-    <string name="done_donate_description">5 Calls is a grassroots supported non-profit organization</string>
+    <string name="done_donate_description">Acton for Animals is a grassroots supported non-profit organization</string>
 
     <!-- A prompt to donate to 5 calls, shown near the donate button. -->
-    <string name="done_donate_prompt">Help keep 5 Calls free and up-to-date</string>
+    <string name="done_donate_prompt">Help keep Action for Animals free and up-to-date</string>
 
     <!-- A button to go to a page that accepts donations. -->
     <string name="done_donate_button">Donate</string>

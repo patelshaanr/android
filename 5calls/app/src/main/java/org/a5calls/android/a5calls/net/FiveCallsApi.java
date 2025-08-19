@@ -41,13 +41,13 @@ public class FiveCallsApi {
     // request on the server. This will only work on debug builds.
     protected static final boolean TESTING = true;
 
-    private static final String GET_ISSUES_REQUEST = "https://api.5calls.org/v1/issues";
+    // private static final String GET_ISSUES_REQUEST = "https://api.5calls.org/v1/issues";
+    private static final String GET_ISSUES_REQUEST = "https://calls-a1b43-default-rtdb.firebaseio.com/";
+    private static final String GET_CONTACTS_REQUEST = "https://us-central1-calls-a1b43.cloudfunctions.net/api/getContactsByZip/";
 
-    private static final String GET_CONTACTS_REQUEST = "https://api.5calls.org/v1/reps?location=";
+    private static final String GET_REPORT = "https://us-central1-calls-a1b43.cloudfunctions.net/api/reportCall";
 
-    private static final String GET_REPORT = "https://api.5calls.org/v1/report";
-
-    private static final String NEWSLETTER_SUBSCRIBE = "https://buttondown.com/api/emails/embed-subscribe/5calls";
+    private static final String NEWSLETTER_SUBSCRIBE = "https://us-central1-calls-a1b43.cloudfunctions.net/api/subscribe";
 
     public interface CallRequestListener {
         void onRequestError();
@@ -177,68 +177,68 @@ public class FiveCallsApi {
     }
 
     private void buildContactsRequest(String url, final List<ContactsRequestListener> listeners) {
-            // Request a JSON Object response from the provided URL.
-            JsonObjectRequest contactsRequest = new JsonObjectRequest(
-                    Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-                @Override
-                public void onResponse(JSONObject response) {
-                    if (response != null) {
-                        String locationName = "";
-                        boolean lowAccuracy = false;
-                        try {
-                            locationName = response.getString("location");
-                            if (response.has("isSplit")) {
-                                lowAccuracy = response.getBoolean("isSplit");
-                            }
-                        } catch (JSONException e) {
-                            for (ContactsRequestListener listener : listeners) {
-                                listener.onJsonError();
-                            }
+        // Request a JSON Object response from the provided URL.
+        JsonObjectRequest contactsRequest = new JsonObjectRequest(
+                Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                if (response != null) {
+                    String locationName = "";
+                    boolean lowAccuracy = false;
+                    try {
+                        locationName = response.getString("location");
+                        if (response.has("isSplit")) {
+                            lowAccuracy = response.getBoolean("isSplit");
                         }
-                        JSONArray jsonArray = response.optJSONArray("representatives");
-                        if (jsonArray == null) {
-                            for (ContactsRequestListener listener : listeners) {
-                                listener.onJsonError();
-                            }
-                            return;
-                        }
-                        Type listType = new TypeToken<ArrayList<Contact>>(){}.getType();
-                        List<Contact> contacts = mGson.fromJson(jsonArray.toString(), listType);
+                    } catch (JSONException e) {
                         for (ContactsRequestListener listener : listeners) {
-                            listener.onContactsReceived(locationName, lowAccuracy, contacts);
-                        }
-
-                        try {
-                            String state = response.getString("state");
-                            String district = response.getString("district");
-                            if (!TextUtils.isEmpty(state) && !TextUtils.isEmpty(district)) {
-                                if (OneSignal.isInitialized()) {
-                                    OneSignal.getUser().addTag("districtID", state + "-" + district);
-                                }
-                            }
-                        } catch (JSONException e) {
-                            e.printStackTrace();
+                            listener.onJsonError();
                         }
                     }
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    if (error.networkResponse != null && error.networkResponse.statusCode == 400) {
-                        // Address error. We reached the server but it couldn't create a response.
+                    JSONArray jsonArray = response.optJSONArray("representatives");
+                    if (jsonArray == null) {
                         for (ContactsRequestListener listener : listeners) {
-                            listener.onAddressError();
+                            listener.onJsonError();
                         }
                         return;
                     }
+                    Type listType = new TypeToken<ArrayList<Contact>>(){}.getType();
+                    List<Contact> contacts = mGson.fromJson(jsonArray.toString(), listType);
                     for (ContactsRequestListener listener : listeners) {
-                        listener.onRequestError();
+                        listener.onContactsReceived(locationName, lowAccuracy, contacts);
+                    }
+
+                    try {
+                        String state = response.getString("state");
+                        String district = response.getString("district");
+                        if (!TextUtils.isEmpty(state) && !TextUtils.isEmpty(district)) {
+                            if (OneSignal.isInitialized()) {
+                                OneSignal.getUser().addTag("districtID", state + "-" + district);
+                            }
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
                     }
                 }
-            });
-            contactsRequest.setTag(TAG);
-            // Add the request to the RequestQueue.
-            mRequestQueue.add(contactsRequest);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                if (error.networkResponse != null && error.networkResponse.statusCode == 400) {
+                    // Address error. We reached the server but it couldn't create a response.
+                    for (ContactsRequestListener listener : listeners) {
+                        listener.onAddressError();
+                    }
+                    return;
+                }
+                for (ContactsRequestListener listener : listeners) {
+                    listener.onRequestError();
+                }
+            }
+        });
+        contactsRequest.setTag(TAG);
+        // Add the request to the RequestQueue.
+        mRequestQueue.add(contactsRequest);
     }
 
     public void getReport() {
