@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#1875d1</color>
-    <color name="colorPrimaryDark">#0F4B86</color>
-    <color name="colorAccent">#c62b10</color>
-    <color name="colorAccentLight">#F27761</color>
-    <color name="background_color">#FFFFFF</color>
-    <color name="issue_background_color">#eee</color>
-    <color name="button_color">#baddfa</color>
-    <color name="script_background_color">#f5f5f5</color>
-    <color name="check_color">#0f9d58</color>
-    <color name="textColorDarkGrey">#333333</color>
-    <color name="textColorLightGrey">#666</color>
-    <color name="check_circle_outside_color">#AAA</color>
+    <color name="colorPrimary">#2E7D32</color> <!-- deep green -->
+    <color name="colorPrimaryDark">#1B5E20</color> <!-- darker green for status bar -->
+    <color name="colorAccent">#66BB6A</color> <!-- accent green -->
+    <color name="colorAccentLight">#A5D6A7</color> <!-- lighter accent -->
+
+    <!-- Backgrounds -->
+    <color name="background_color">#FFFFFF</color> <!-- app background -->
+    <color name="issue_background_color">#F0FDF4</color> <!-- very light green background -->
+    <color name="script_background_color">#F5F5F5</color> <!-- neutral light grey -->
+
+    <!-- Buttons -->
+    <color name="button_color">#FFFFFF</color> <!-- white buttons -->
+    <color name="button_text_color">#2E7D32</color> <!-- green text on white buttons -->
+
+    <!-- States -->
+    <color name="check_color">#388E3C</color> <!-- green check -->
     <color name="contacted_color">@color/colorAccent</color>
     <color name="voicemail_color">@color/colorPrimary</color>
     <color name="unavailable_color">@color/colorPrimaryDark</color>
-    <color name="graph_legend_background_color">#9EEE</color>
-    <color name="navigation_view_background_color">#EEE</color>
+
+    <!-- Text colors -->
+    <color name="textColorDarkGrey">#212121</color>
+    <color name="textColorLightGrey">#757575</color>
+
+    <!-- Graphs & UI bits -->
+    <color name="check_circle_outside_color">#C8E6C9</color> <!-- pale green -->
+    <color name="graph_legend_background_color">#E8F5E9</color> <!-- light green bg -->
+    <color name="navigation_view_background_color">#E8F5E9</color> <!-- same as legend -->
 </resources>

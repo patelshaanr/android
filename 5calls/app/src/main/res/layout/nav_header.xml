@@ -7,6 +7,6 @@
     <ImageView
         style="@style/headerImageStyle"
         android:contentDescription="@null"
-        android:src="@drawable/banner_5calls"
+        android:src="@drawable/actionforanimalsbannerandroid"
         />
 </LinearLayout>

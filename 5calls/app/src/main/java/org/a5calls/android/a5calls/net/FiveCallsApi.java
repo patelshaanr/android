@@ -42,7 +42,7 @@ public class FiveCallsApi {
     protected static final boolean TESTING = true;
 
     // private static final String GET_ISSUES_REQUEST = "https://api.5calls.org/v1/issues";
-    private static final String GET_ISSUES_REQUEST = "https://calls-a1b43-default-rtdb.firebaseio.com/";
+    private static final String GET_ISSUES_REQUEST = "https://calls-a1b43-default-rtdb.firebaseio.com/.json";
     private static final String GET_CONTACTS_REQUEST = "https://us-central1-calls-a1b43.cloudfunctions.net/api/getContactsByZip/";
 
     private static final String GET_REPORT = "https://us-central1-calls-a1b43.cloudfunctions.net/api/reportCall";
