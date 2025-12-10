@@ -82,7 +82,7 @@ def run_single_worker_debug():
     """Run a single worker in the main process to debug logic without multiprocessing."""
     print("[MAIN-DEBUG] Running single-worker debug mode...", flush=True)
 
-    num_actions = 2
+    num_actions =2
     global_net = A3CNet(num_actions)
 
     optimizer = torch.optim.Adam(global_net.parameters(), lr=1e-4)
