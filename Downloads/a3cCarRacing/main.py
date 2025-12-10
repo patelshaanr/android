@@ -26,13 +26,12 @@ def run_multiprocess():
         "entropy_beta": 0.01,
         "value_loss_coef": 0.5,
         "grad_clip": 40.0,
-        "max_steps": 200_000,
+        "max_steps": 250_000,
     }
-
+    workers = []
     global_counter = mp.Value("i", 0)
     log_queue = mp.Queue()
 
-    workers = []
     for wid in range(num_workers):
         print(f"[MAIN] Starting worker {wid}...", flush=True)
         p = mp.Process(
